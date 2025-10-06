@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Personal Portfolio</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="#welcome-section">About</a>
+      <a href="#project-section">Projects</a>
+      <a href="#contact-section">Contact</a>
+    </nav>
+    <section id="welcome-section">
+      <h1>Hey I am Anton</h1>
+      <p>a game dev and designer</p>
+    </section>
+    <section id="project-section">
+      <h2>My Projects</h2>
+      <div id="projects">
+          <div class="project-tile"
+                data-title="Ambulance Game" 
+                data-img="images/LobbyIdeaForOurCarGame.jpg" 
+                data-desc="For my first group Unity project, Ambulance Game, I designed the lobby as an immersive garage where players could select maps from a board, choose their vehicle, see the leaderboard, and start the selected level by interacting with the car they picked. (I can't find the in game footage so i quickly drew my idea, but I did create the whole thing in the game itself, though level and car selector were more of a future ideas since we didn't have time to create other levels and new vehicles.)">
+            <img alt="Ambulance Game" src="images/LobbyIdeaForOurCarGame.jpg">
+            <p>Ambulance Game</p>
+          </div>
+            <div class="project-tile"
+                data-title="Cat Game"
+                data-img="images/CatGame.jpg"
+                data-desc="For my second Unity project, my first mobile game, I designed and coded a simple 2D game where players control a cat by tilting their phone, collecting coins while avoiding bombs that spawn randomly and disappear after a short time. The goal is to earn as many points as possible. In our team, I handled both the design and coding, while a teammate created the graphics and another handled the UI, allowing me to focus on gameplay mechanics, controls, and player experience.">
+                <img src="images/CatGame.jpg" alt="Cat Game">
+                <p>Cat Game</p>
+            </div>
+
+            <div class="project-tile"
+                data-title="Placeholder Project 1"
+                data-img="images/placeholder1.png"
+                data-desc="Description goes here. Replace with your content later.">
+                <img src="images/placeholder1.png" alt="Placeholder Project 1">
+                <p>Project 1</p>
+            </div>
+
+            <div class="project-tile"
+                data-title="Placeholder Project 2"
+                data-img="images/placeholder2.png"
+                data-desc="Description goes here. Replace with your content later.">
+                <img src="images/placeholder2.png" alt="Placeholder Project 2">
+                <p>Project 2</p>
+            </div>
+      </div>
+      <a id="see-more" href="#" onclick="alert('More projects coming soon!')">See More</a>
+    </section>
+    <section id="contact-section">
+      <h2>Contact</h2>
+      <h3>Follow me on social media</h3>
+      <div id="social-media">
+        <a class="x" href="https://x.com" target="_blank" rel="noopener noreferrer">.com
+        </a>
+        <a href="https://github.com/ant0n02" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/anton-karjalainen-b906b0388" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin"></i>LinkedIn
+        </a>
+        <a href="mailto:antonkarjalainen02@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-envelope"></i>Send a mail
+        </a>
+    </div>
+    <footer>
+      <p>Created in freecodecamp course</p>
+      <p>© <a id="profile-link" href="https://www.linkedin.com/in/anton-karjalainen-b906b0388" target="_blank" rel="noopener noreferrer">Anton</a></p>
+    </footer>
+    </section>
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Project Title</h2>
+            <img id="modal-image" src="" alt="Project Image">
+            <p id="modal-description">Project description goes here...</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
